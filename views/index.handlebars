@@ -41,8 +41,9 @@
       {{#if this.devoured}}
         <div class="eachBurger">
         <li>
+          <br>
           {{this.burger_name}}
-
+          <br>
           <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
             <input type="hidden" name="devoured" value="false">
             <button type="submit" class="btn btn-warning">Put it on the menu!</button>
@@ -63,6 +64,7 @@
   <div class="addBurger text-center">
   <br><br>
   <h2>Add a Burger</h2>
+  <br>
   <form class="create-update-form" action="burgers/create" method="POST">
 
     <div class="form-group">
