@@ -33,6 +33,9 @@
   </div>
 
   <div class="table rightside text-center">
+  <br>
+  <h2 class="tabTitle">Your Table</h2>
+  <br>
   <ul>
     {{#each burgers}}
       {{#if this.devoured}}
@@ -69,8 +72,8 @@
 
     <div class="form-group">
       <label for="eat">Where the burger at?</label><br>
-      <input type="radio" name="devoured" value="1" checked> On the Menu<br>
-      <input type="radio" name="devoured" value="0"> On the Table
+      <input type="radio" name="devoured" value="1" checked> On the Table<br>
+      <input type="radio" name="devoured" value="0"> On the Menu
     </div>
 
     <button type="submit">Add Burger</button>
